@@ -15,10 +15,14 @@ export default function HomePage({ title, subtitle, dark, id }) {
   return (
     <div className={dark ? " section-dark" : "section"}>
       <div className="section-whole">
-        <div className="section-picture">{View}</div>
+        <div
+          className="section-picture"
+          style={{ marginLeft: 100, paddingRight: 100 }}
+        >
+          {View}
+        </div>
         <div className="section-content" id={id}>
           <h1>{title}</h1>
-          <p>{subtitle}</p>
           <div
             style={{
               justifyContent: "center",

@@ -38,25 +38,25 @@ const WebsiteStack = () => {
         <HomePage
           title="Welcome to my website!"
           subtitle={Welcome}
-          dark={true}
+          dark={false}
           id="HomePage"
         />
         <AboutMe
           title="About Me"
           subtitle={AboutMeText}
-          dark={false}
+          dark={true}
           id="AboutMe"
         />
         <Projects
           title="Projects"
           subtitle={ProjectText}
-          dark={true}
+          dark={false}
           id="Projects"
         />
         <ContactMe
           title="Contact Me"
           subtitle={ContactMeText}
-          dark={false}
+          dark={true}
           id="ContactMe"
         />
       </div>

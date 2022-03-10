@@ -29,7 +29,7 @@ const Navbar = ({ dark }) => {
               offset={-70}
               duration={500}
             >
-              Hompeage
+              Homepage
             </Link>
           </li>
           <li className="nav-item">
