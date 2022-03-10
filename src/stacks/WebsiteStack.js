@@ -18,7 +18,6 @@ const WebsiteStack = () => {
   const app = ["About"];
   const [colorChange, setColorchange] = useState(false);
   const { height, width } = useWindowDimensions();
-
   // const changeNavbarColor = () => {
   //   // if (scroll.animateTopScroll)
   //   let y = height;
