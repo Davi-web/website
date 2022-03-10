@@ -13,7 +13,7 @@ export default function HomePage({ title, subtitle, dark, id }) {
   const { View } = useLottie(options);
 
   return (
-    <div className={"section" + (dark ? " section-dark" : "")}>
+    <div className={dark ? " section-dark" : "section"}>
       <div className="section-whole">
         <div className="section-picture">{View}</div>
         <div className="section-content" id={id}>

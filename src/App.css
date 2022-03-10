@@ -152,7 +152,7 @@
   border-radius: 5px;
   border-width: 1px;
   width: 150px;
-  height: fit-content + 10px;
+  height: 30px;
   border-color: black;
   border-style: solid;
   color: #bcd3f2;
@@ -162,6 +162,9 @@
   font-weight: bolder;
   color: #000;
   background-color: #80a4ed;
+  border-radius: 20px;
+  align-self: center;
+  justify-self: center;
 }
 .AboutMeButton:hover {
   border-style: solid;

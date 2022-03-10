@@ -13,7 +13,7 @@ import "../App.css";
 
 export default function Projects({ title, subtitle, dark, id }) {
   return (
-    <div className={"section" + (dark ? " section-dark" : "")}>
+    <div className={dark ? " section-dark" : "section"}>
       <div className="project-whole">
         <div className="section-whole">
           <div className="section-picture">

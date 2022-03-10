@@ -3,7 +3,7 @@ import selfie from "../pictures/selfie.jpg";
 
 export default function Section({ title, subtitle, dark, id }) {
   return (
-    <div className={"section" + (dark ? " section-dark" : "")}>
+    <div className={dark ? " section-dark" : "section"}>
       <div className="section-whole">
         <div className="section-picture">
           <img
