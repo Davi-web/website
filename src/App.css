@@ -148,7 +148,7 @@
   flex-direction: column;
   align-items: center;
 
-  /* padding: 40px; */
+  padding: 40px;
 }
 .section-content-contact {
   display: flex;
@@ -181,6 +181,7 @@
   font-weight: bolder;
   color: #000;
   background-color: #80a4ed;
+  padding: 5px;
   border-radius: 20px;
 }
 .AboutMeButton:hover {
@@ -197,14 +198,15 @@
 h1 {
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
     "Arial", sans-serif;
+  font-weight: 600;
   font-size: 40px;
 }
 p {
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
     "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 600;
-  text-align: center;
+  font-weight: 400;
+  text-align: left;
   letter-spacing: 0.011em;
   line-height: 1.1904761905;
   color: #000;
@@ -216,4 +218,12 @@ p {
 
 .contact {
   text-align: left;
+}
+.circle-image {
+  width: 150;
+  height: 150;
+  borderradius: 150 / 2;
+  overflow: hidden;
+  borderwidth: 3;
+  bordercolor: red;
 }

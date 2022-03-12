@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { Link } from "react-scroll";
 import selfie from "../pictures/selfie.jpg";
 import { useLottie } from "lottie-react";
 import WelcomeBot from "../pictures/WelcomeBot.json";
+import background from "../pictures/background.jpg";
+import profilePic from "../pictures/profilePic.jpg";
+import { useNavigate } from "react-router-dom";
 export default function HomePage({ title, subtitle, dark, id }) {
   let options = {
     animationData: WelcomeBot,
@@ -13,7 +16,16 @@ export default function HomePage({ title, subtitle, dark, id }) {
   const { View } = useLottie(options);
 
   return (
-    <div className={dark ? " section-dark" : "section"}>
+    <div
+      className={(dark ? " section-dark" : "section") + "background"}
+      style={{
+        backgroundImage: `url(${background})`,
+        height: "100vh",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
       <div className="section-whole">
         <div
           className="section-picture"
@@ -44,6 +56,7 @@ export default function HomePage({ title, subtitle, dark, id }) {
                 <div
                   style={{
                     borderRadius: 10,
+                    cursor: "pointer",
                   }}
                 >
                   About Me
