@@ -173,7 +173,7 @@
   width: 150px;
   height: 30px;
   border-color: black;
-  border-style: solid;
+  border-style: hidden;
   color: #bcd3f2;
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
     "Arial", sans-serif;
@@ -182,10 +182,11 @@
   color: #000;
   background-color: #80a4ed;
   padding: 5px;
+  padding-top: 5px;
   border-radius: 20px;
 }
 .AboutMeButton:hover {
-  border-style: solid;
+  /* border-style: solid; */
   color: white;
 }
 
