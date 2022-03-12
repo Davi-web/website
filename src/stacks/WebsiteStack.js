@@ -44,13 +44,13 @@ const WebsiteStack = () => {
         <AboutMe
           title="About Me"
           subtitle={AboutMeText}
-          dark={true}
+          dark={false}
           id="AboutMe"
         />
         <Projects
           title="Projects"
           subtitle={ProjectText}
-          dark={false}
+          dark={true}
           id="Projects"
         />
         <ContactMe

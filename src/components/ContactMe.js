@@ -4,7 +4,10 @@ import { useLottie } from "lottie-react";
 import ContactUsAnimation from "../pictures/ContactUs.json";
 import groovyWalkAnimation from "../pictures/groovyWalk.json";
 import WelcomeBot from "../pictures/WelcomeBot.json";
-import { BsLinkedin } from "react-icons/bs";
+import { BsLinkedin, BsFillFileEarmarkPdfFill } from "react-icons/bs";
+import { AiOutlineFilePdf } from "react-icons/ai";
+import { VscFilePdf } from "react-icons/vsc";
+import Pdf from "../pictures/resume.pdf";
 
 export default function ContactMe({ title, subtitle, dark, id }) {
   const options = {
@@ -38,8 +41,26 @@ export default function ContactMe({ title, subtitle, dark, id }) {
                 <BsLinkedin
                   size={25}
                   color="#0e76a8"
-                  style={{ marginLeft: 10, background: "#ffffff" }}
+                  style={{
+                    marginLeft: 10,
+                    background: "#ffffff",
+                    marginTop: 10,
+                  }}
                 />{" "}
+              </a>
+            </p>
+            <p className="contact">
+              Download Resume:
+              <a href={Pdf} download>
+                <VscFilePdf
+                  size={30}
+                  color="red"
+                  enableBackground={true}
+                  style={{
+                    marginLeft: 10,
+                    marginTop: -500,
+                  }}
+                />
               </a>
             </p>
           </div>

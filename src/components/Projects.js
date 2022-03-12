@@ -15,18 +15,22 @@ export default function Projects({ title, subtitle, dark, id }) {
   return (
     <div className={dark ? " section-dark" : "section"}>
       <div className="project-whole">
-        <div className="section-whole">
+        <div
+          className="section-whole"
+          style={{ borderBottomStyle: "solid", borderWidth: 1 }}
+        >
           <div className="section-picture">
             <img
               src={Lingle}
               alt="Lingle"
-              width="500"
-              height="300"
+              width="600"
+              height="360"
               style={{ padding: 50 }}
             ></img>
           </div>
           <div className="section-content" id={id}>
-            <h1>Lingle</h1>
+            <p style={{ margin: 0 }}>February 2022 (React)</p>
+            <h1>Lingle: Word Game</h1>
             <p>
               The most recent project that I have completed is Lingle. Lingle is
               an adaptation to the popular New York Times game Wordle. My friend
@@ -58,40 +62,46 @@ export default function Projects({ title, subtitle, dark, id }) {
             </div>
           </div>
         </div>
-        <div className="section-whole">
+        <div
+          className="section-whole"
+          style={{ borderBottomStyle: "solid", borderWidth: 1 }}
+        >
           <div className="section-picture">
             <img
               src={tradedImage1}
-              alt="Lingle"
-              width="250"
+              alt="t1"
+              width="300"
               height="500"
-              style={{ padding: 20 }}
+              style={{ padding: 15, borderRadius: 40 }}
             ></img>
             <img
               src={tradedImage3}
-              alt="Lingle"
-              width="250"
+              alt="t3"
+              width="300"
               height="500"
-              style={{ padding: 20 }}
+              style={{ padding: 15, borderRadius: 40 }}
             ></img>
           </div>
           <div className="section-picture">
             <img
               src={tradedImage2}
-              alt="Lingle"
-              width="250"
+              alt="t2"
+              width="300"
               height="500"
-              style={{ padding: 20 }}
+              style={{ padding: 15, borderRadius: 40 }}
             ></img>
             <img
               src={tradedImage4}
-              alt="Lingle"
-              width="250"
+              alt="t4"
+              width="300"
               height="500"
-              style={{ padding: 20 }}
+              style={{ padding: 15, borderRadius: 40, marginBottom: 50 }}
             ></img>
           </div>
           <div className="section-content" id={id}>
+            <p style={{ margin: 0 }}>
+              May 2021 - Current (React Native & Firebase)
+            </p>
             <h1>Traded</h1>
             <p>
               I worked on a start up app last summer called Traded, which is an
@@ -124,17 +134,21 @@ export default function Projects({ title, subtitle, dark, id }) {
             </p>
           </div>
         </div>
-        <div className="section-whole">
+        <div
+          className="section-whole"
+          style={{ borderBottomStyle: "solid", borderWidth: 1 }}
+        >
           <div className="section-picture">
             <img
               src={Billboard}
-              alt="Lingle"
-              width="500"
-              height="300"
+              alt="Billboard"
+              width="600"
+              height="360"
               style={{ padding: 50 }}
             ></img>
           </div>
           <div className="section-content" id={id}>
+            <p style={{ margin: 0 }}>September 2021 (React & Node)</p>
             <h1>Billboard Guessing Game</h1>
             <p>
               For this project, I webscraped the Billboard Top 100 songs from
@@ -155,7 +169,10 @@ export default function Projects({ title, subtitle, dark, id }) {
             </p>
           </div>
         </div>
-        <div className="section-whole">
+        <div
+          className="section-whole"
+          style={{ borderBottomStyle: "solid", borderWidth: 1 }}
+        >
           <div className="section-picture">
             <ReactPlayer
               controls={true}
@@ -165,6 +182,14 @@ export default function Projects({ title, subtitle, dark, id }) {
             />
           </div>
           <div className="section-content" id={id}>
+            <div
+              style={{
+                textAlign: "right",
+              }}
+            >
+              <p style={{ margin: 0 }}>February 2021 (Python)</p>
+            </div>
+
             <h1>Automated Food Ordering System</h1>
             <p>
               Vanderbilt University uses the GET CBORD application to manage
@@ -185,7 +210,10 @@ export default function Projects({ title, subtitle, dark, id }) {
           </div>
         </div>
 
-        <div className="section-whole">
+        <div
+          className="section-whole"
+          style={{ borderBottomStyle: "solid", borderWidth: 1 }}
+        >
           <div className="section-picture">
             <ReactPlayer
               controls={true}
@@ -195,6 +223,7 @@ export default function Projects({ title, subtitle, dark, id }) {
             />
           </div>
           <div className="section-content" id={id}>
+            <p style={{ margin: 0 }}>March 2021 (Django & Python)</p>
             <h1>CS50 Web Programming Project 1: Wiki</h1>
             <p>
               I implemented a wikipedia page where users can store information
@@ -220,6 +249,7 @@ export default function Projects({ title, subtitle, dark, id }) {
             />
           </div>
           <div className="section-content" id={id}>
+            <p style={{ margin: 0 }}>February 2021 (HTML & CSS)</p>
             <h1>CS50 Web Programming Project 0: Search</h1>
             <p>
               I implemented the frontend for Google Search, Google Image Search,
