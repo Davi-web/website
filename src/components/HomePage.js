@@ -3,8 +3,7 @@ import { Link } from "react-scroll";
 import selfie from "../pictures/selfie.jpg";
 import { useLottie } from "lottie-react";
 import WelcomeBot from "../pictures/WelcomeBot.json";
-import background from "../pictures/background.jpg";
-import profilePic from "../pictures/profilePic.jpg";
+import background from "../pictures/background.jpeg";
 import { useNavigate } from "react-router-dom";
 export default function HomePage({ title, subtitle, dark, id }) {
   let options = {
