@@ -3,6 +3,6 @@ const text = [
   "949-838-5884",
   "jeseung.ha@vanderbilt.edu",
   "david.jeseung.ha@gmail.com",
-  "https://www.linkedin.com/in/david-ha-a50/",
+  "https://www.linkedin.com/in/david-j-ha/",
 ];
 export default text;
