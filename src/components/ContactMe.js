@@ -51,7 +51,7 @@ export default function ContactMe({ title, subtitle, dark, id }) {
             </p>
             <p className="contact">
               Download Resume:
-              <a href={Pdf} download>
+              <a href={Pdf} download="David_Ha_Resume">
                 <VscFilePdf
                   size={30}
                   color="red"

@@ -1,5 +1,4 @@
 import React, { lazy } from "react";
-import selfie from "../pictures/selfie.jpg";
 import Lingle from "../pictures/Lingle.png";
 import Billboard from "../pictures/Billboard.png";
 import tradedImage1 from "../pictures/tradedImage1.png";
@@ -7,7 +6,7 @@ import tradedImage2 from "../pictures/tradedImage2.png";
 import tradedImage3 from "../pictures/tradedImage3.png";
 import tradedImage4 from "../pictures/tradedImage4.png";
 
-import { BsGithub, BsSlack } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 import ReactPlayer from "react-player/lazy";
 import "../App.css";
 

@@ -1,8 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Website from "./stacks/WebsiteStack";
-import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return <Website className="App" />;
