@@ -181,7 +181,7 @@ export default function Projects({ title, subtitle, dark, id }) {
           <div className="section-picture">
             <ReactPlayer
               controls={true}
-              url="https://youtu.be/oRZqxxQ2wsI"
+              url="https://www.youtube.com/watch?v=oRZqxxQ2wsI"
               width="600px"
               style={{ padding: "50px" }}
               l
