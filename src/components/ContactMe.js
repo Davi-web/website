@@ -1,15 +1,15 @@
-import React from "react";
-import selfie from "../pictures/selfie.jpg";
+import React, { useState, useEffect } from "react";
 import { useLottie } from "lottie-react";
-import ContactUsAnimation from "../pictures/ContactUs.json";
-import groovyWalkAnimation from "../pictures/groovyWalk.json";
-import WelcomeBot from "../pictures/WelcomeBot.json";
-import { BsLinkedin, BsFillFileEarmarkPdfFill } from "react-icons/bs";
-import { AiOutlineFilePdf } from "react-icons/ai";
+import { BsLinkedin } from "react-icons/bs";
 import { VscFilePdf } from "react-icons/vsc";
 import Pdf from "../pictures/resume.pdf";
 
 export default function ContactMe({ title, subtitle, dark, id }) {
+  const [groovyWalkAnimation, setGroovyWalkAnimation] = useState();
+
+  useEffect(() => {
+    import("../pictures/groovyWalk.json").then(setGroovyWalkAnimation);
+  }, []);
   const options = {
     animationData: groovyWalkAnimation,
     loop: true,

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy } from "react";
 import profile from "../pictures/profile.png";
 import { Link } from "react-scroll";
 export default function AboutMe({ title, subtitle, dark, id }) {
@@ -10,6 +10,7 @@ export default function AboutMe({ title, subtitle, dark, id }) {
             src={profile}
             alt="profile"
             style={{ borderRadius: "50%", margin: 80, position: "relative" }}
+            loading={lazy}
           ></img>
         </div>
         <div className="section-content" id={id}>

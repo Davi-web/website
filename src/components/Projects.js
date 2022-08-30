@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy } from "react";
 import selfie from "../pictures/selfie.jpg";
 import Lingle from "../pictures/Lingle.png";
 import Billboard from "../pictures/Billboard.png";
@@ -8,7 +8,7 @@ import tradedImage3 from "../pictures/tradedImage3.png";
 import tradedImage4 from "../pictures/tradedImage4.png";
 
 import { BsGithub, BsSlack } from "react-icons/bs";
-import ReactPlayer from "react-player/youtube";
+import ReactPlayer from "react-player/lazy";
 import "../App.css";
 
 export default function Projects({ title, subtitle, dark, id }) {
@@ -26,6 +26,7 @@ export default function Projects({ title, subtitle, dark, id }) {
               width="600"
               height="360"
               style={{ padding: 50 }}
+              loading={lazy}
             ></img>
           </div>
           <div className="section-content" id={id}>
@@ -73,6 +74,7 @@ export default function Projects({ title, subtitle, dark, id }) {
               width="300"
               height="500"
               style={{ padding: 15, borderRadius: 40 }}
+              loading={lazy}
             ></img>
             <img
               src={tradedImage3}
@@ -80,6 +82,7 @@ export default function Projects({ title, subtitle, dark, id }) {
               width="300"
               height="500"
               style={{ padding: 15, borderRadius: 40 }}
+              loading={lazy}
             ></img>
           </div>
           <div className="section-picture">
@@ -89,6 +92,7 @@ export default function Projects({ title, subtitle, dark, id }) {
               width="300"
               height="500"
               style={{ padding: 15, borderRadius: 40 }}
+              loading={lazy}
             ></img>
             <img
               src={tradedImage4}
@@ -96,6 +100,7 @@ export default function Projects({ title, subtitle, dark, id }) {
               width="300"
               height="500"
               style={{ padding: 15, borderRadius: 40, marginBottom: 50 }}
+              loading={lazy}
             ></img>
           </div>
           <div className="section-content" id={id}>
@@ -145,6 +150,7 @@ export default function Projects({ title, subtitle, dark, id }) {
               width="600"
               height="360"
               style={{ padding: 50 }}
+              loading={lazy}
             ></img>
           </div>
           <div className="section-content" id={id}>
@@ -179,6 +185,7 @@ export default function Projects({ title, subtitle, dark, id }) {
               url="https://youtu.be/oRZqxxQ2wsI"
               width="600px"
               style={{ padding: "50px" }}
+              l
             />
           </div>
           <div className="section-content" id={id}>

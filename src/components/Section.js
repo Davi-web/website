@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy } from "react";
 import selfie from "../pictures/selfie.jpg";
 
 export default function Section({ title, subtitle, dark, id }) {
@@ -12,6 +12,7 @@ export default function Section({ title, subtitle, dark, id }) {
             width="200"
             height="280"
             style={{ padding: 50 }}
+            loading={lazy}
           ></img>
         </div>
         <div className="section-content" id={id}>

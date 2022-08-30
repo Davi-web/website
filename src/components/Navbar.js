@@ -1,9 +1,13 @@
-import React, { Component, useState } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import { useLottie } from "lottie-react";
-import logo from "../pictures/logo.json";
 
 const Navbar = ({ dark }) => {
+  const [logo, setLogo] = useState();
+
+  useEffect(() => {
+    import("../pictures/logo.json").then(setLogo);
+  }, []);
   const options = {
     animationData: logo,
     loop: true,
@@ -11,9 +15,6 @@ const Navbar = ({ dark }) => {
   };
 
   const { View } = useLottie(options);
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
 
   return (
     <nav className={dark ? "nav-dark" : "nav"} id="navbar">

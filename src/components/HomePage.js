@@ -1,13 +1,15 @@
-import React, { useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import selfie from "../pictures/selfie.jpg";
 import { useLottie } from "lottie-react";
-import WelcomeBot from "../pictures/WelcomeBot.json";
 import background from "../pictures/background.jpeg";
-import { useNavigate } from "react-router-dom";
-export default function HomePage({ title, subtitle, dark, id }) {
+export default function HomePage({ title, dark, id }) {
+  const [welcomeBot, setWelcomeBot] = useState();
+
+  useEffect(() => {
+    import("../pictures/WelcomeBot.json").then(setWelcomeBot);
+  }, []);
   let options = {
-    animationData: WelcomeBot,
+    animationData: welcomeBot,
     loop: true,
     autoplay: true,
   };
