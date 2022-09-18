@@ -46,7 +46,7 @@ export default function Projects({ title, subtitle, dark, id }) {
             />
           </div>
           <div className="section-content" id={id}>
-            <p style={{ margin: 0 }}>February 2022 (React)</p>
+            <p style={{ margin: 0 }}>May 2022 - October 2022</p>
             <h1>Enlyte - Software Developer Engineer Intern</h1>
             <p>
               This summer, I did my summer internship at Mitchell
