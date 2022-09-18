@@ -5,6 +5,9 @@ import tradedImage1 from "../pictures/tradedImage1.png";
 import tradedImage2 from "../pictures/tradedImage2.png";
 import tradedImage3 from "../pictures/tradedImage3.png";
 import tradedImage4 from "../pictures/tradedImage4.png";
+import connect from "../pictures/connect.jpg";
+import jenkins from "../pictures/jenkins.jpg";
+import postman from "../pictures/postman.jpg";
 
 import { BsGithub } from "react-icons/bs";
 import ReactPlayer from "react-player/lazy";
@@ -14,6 +17,88 @@ export default function Projects({ title, subtitle, dark, id }) {
   return (
     <div className={dark ? " section-dark" : "section"}>
       <div className="project-whole">
+        <div
+          className="section-whole"
+          style={{ borderBottomStyle: "solid", borderWidth: 1 }}
+        >
+          <div className="section-picture">
+            <img
+              src={jenkins}
+              alt="jenkins"
+              width="600"
+              style={{ padding: 50 }}
+              loading={lazy}
+            />
+            <img
+              src={postman}
+              alt="postman"
+              width="600"
+              style={{ padding: 50 }}
+              loading={lazy}
+            />
+            <img
+              src={connect}
+              alt="connect"
+              width="600"
+              height="360"
+              style={{ padding: 50 }}
+              loading={lazy}
+            />
+          </div>
+          <div className="section-content" id={id}>
+            <p style={{ margin: 0 }}>February 2022 (React)</p>
+            <h1>Enlyte - Software Developer Engineer Intern</h1>
+            <p>
+              This summer, I did my summer internship at Mitchell
+              Internationals, which rebranded itself as Enlyte. In the
+              beginning, I started with the React Redux tutorial, where I
+              learned how to use Redux with testing. Then I started out unit
+              testing with JUnit, where I increased the code coverage for a
+              microservice by 15%. Then, I created a microservice using Maven
+              Spring Boot, which was used as an internal tool to clean up EMS
+              Scanned jobs in the Mitchell Connect website. This microservice
+              was very interesting in the way that we wanted to use Reactive
+              Programming to allow asyncrhonous calls in the
+              microservice(Reactor 3). To do this, the logic of the microservice
+              was done functionally using operations like map and flatMap to
+              mainuplate data and chain events. This was something I have done
+              in class in Programming Languages, but it was the first time I was
+              able to experiment with in a real life setting. It was a different
+              way to think and it allowed me to reinforce my learning in
+              Functional Programming. After finishing developing the
+              microservice, I was able to deploy it in QA and UAT environemnt
+              and I was able to demo the microservice to the system's team so
+              that they can start using it for testing purposes. I was also able
+              to create a dynamic postman collection which does the same
+              functionality as the microservice but also for non EMS Scanned
+              jobs as well. Then, I worked on Load Testing the microservice
+              using a python script to easily generate EMS scanned jobs, Jmeter
+              to hit the microservice endpoint for load testing, and then Kibana
+              to visualize the microservice's data to see how it is doing.
+            </p>
+            <p>
+              The technologies that I worked with during the internship are:
+            </p>
+            <ul>
+              <li>React/Redux from tutorial</li>
+              <li>JUNIT 4&5 from unit testing</li>
+              <li>Maven Spring Boot for the microservice</li>
+              <li>Jenkins for automating Pull Requests</li>
+              <li>Jacoco for Code Coverage metrics</li>
+              <li>Sonar for checkstyle violations</li>
+              <li>
+                Swagger-UI for easily generating UI to run the microservice
+              </li>
+              <li>Postman for testing endpoints</li>
+              <li>Python for generating EMS Scanned jobs in Connect</li>
+              <li>
+                SQL for querying jobUids of EMS Scanned jobs created in Connect
+              </li>
+              <li>JMeter for Load Testing</li>
+              <li>Kibana for visualizing data</li>
+            </ul>
+          </div>
+        </div>
         <div
           className="section-whole"
           style={{ borderBottomStyle: "solid", borderWidth: 1 }}
